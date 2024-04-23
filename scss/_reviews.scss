@@ -1,0 +1,94 @@
+.reviews {
+  max-width: 1280px;
+  width: 100%;
+  min-height: 600px;
+  background-color: #f5f5f5;
+  margin: auto;
+  margin-top: 100px;
+  padding: 30px 30px;
+
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #42446e;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .reviews-container {
+    max-width: 1220px;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .reviewscard {
+      background-color: #fff;
+
+      min-height: 417px;
+      padding: 10px 20px;
+      max-width: 340px;
+      width: 100%;
+      border-radius: 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+      &:hover {
+        border: 1px solid #bfc8e5;
+        border-radius: 16px;
+        box-shadow: 10px 7px 22px 0px rgba(218, 224, 249, 0.69);
+        -webkit-box-shadow: 10px 7px 22px 0px rgba(218, 224, 249, 0.69);
+        -moz-box-shadow: 10px 7px 22px 0px rgba(218, 224, 249, 0.69);
+      }
+      .reviewer {
+        border-radius: 50%;
+        width: 112px;
+      }
+      h4 {
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18px;
+        color: #42446e;
+      }
+
+      p {
+        margin-top: 30px;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 26px;
+        text-align: center;
+        color: #666;
+        min-height: 300px;
+      }
+
+      .btn-readmore {
+        margin-top: 15px;
+        background-color: #fff;
+        padding: 2px 8px 2px 8px;
+        border-radius: 10px;
+        border: 2px solid #bfc8e6;
+        a {
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 18px;
+          color: #516fd4;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews {
+    h2 {
+      font-size: 35px;
+      margin-top: 50px;
+    }
+    .reviews-container {
+      flex-direction: column;
+      .reviewscard {
+        margin-top: 30px;
+      }
+    }
+  }
+}

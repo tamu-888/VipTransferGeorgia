@@ -1,0 +1,100 @@
+.footer {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+  margin-top: 100px;
+  padding: 10px 30px;
+
+  .footer-container {
+    max-width: 1220px;
+    width: 100%;
+    .contacts {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      img {
+        width: 45px;
+      }
+      .gmail {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 15px;
+
+        p {
+          text-decoration: underline;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 26px;
+          text-align: left;
+          color: #42446e;
+        }
+      }
+      .footer-logo {
+        width: 130px;
+      }
+      .phone {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 15px;
+        p {
+          text-decoration: underline;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 26px;
+          text-align: left;
+          color: #42446e;
+        }
+      }
+    }
+    .divider {
+      max-width: 1220px;
+      width: 100%;
+    }
+  }
+  .geo-lab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    .designed {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 26px;
+      text-align: left;
+      color: #42446e;
+      span {
+        background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+        background-clip: text;
+        color: rgba(0, 0, 0, 0);
+      }
+    }
+    a {
+      .geolab-logo {
+        width: 75px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    .footer-container {
+      .contacts {
+        flex-direction: column;
+        row-gap: 30px;
+      }
+    }
+
+    .geo-lab {
+      flex-direction: column;
+      row-gap: 30px;
+      .designed {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 15px;
+      }
+    }
+  }
+}

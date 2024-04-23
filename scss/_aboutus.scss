@@ -1,0 +1,67 @@
+.aboutus {
+  max-width: 1280px;
+  width: 100%;
+  min-height: 600px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 30px 30px;
+  background-color: #f5f5f5;
+
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #42446e;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .card {
+    max-width: 1220px;
+    width: 100%;
+    border-radius: 34px;
+    padding: 48px 75px;
+    background-color: #fff;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 60px;
+    margin-top: 50px;
+
+    .desc {
+      p {
+        max-width: 500px;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 26px;
+        text-align: center;
+        color: #666;
+      }
+      ul {
+        li {
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 26px;
+        }
+      }
+    }
+    .video {
+      max-width: 500px;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutus {
+    h2 {
+      font-size: 35px;
+    }
+    .card {
+      flex-direction: column-reverse;
+      row-gap: 50px;
+    }
+  }
+}
